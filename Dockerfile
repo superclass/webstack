@@ -1,7 +1,7 @@
-FROM debian:buster
+FROM debian:bullseye
 MAINTAINER Andre van Dijk <andre.van.dijk@superclass.nl>
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get update && apt-get install -y apache2 php7.3 php-imagick php7.3-cli php7.3-common php7.3-curl php7.3-fpm php7.3-gd php7.3-json php7.3-mbstring php7.3-mysql php7.3-opcache php7.3-readline php7.3-xml php7.3-zip php7.3-intl  libapache2-mod-xsendfile libapache2-mod-php7.3 vim-tiny wget php7.3-sqlite3 php-apcu php7.3-gmp php7.3-bcmath libmagickcore-6.q16-6-extra
+RUN apt-get update && apt-get install -y apache2 php7.4 php-imagick php7.4-cli php7.4-common php7.4-curl php7.4-fpm php7.4-gd php7.4-json php7.4-mbstring php7.4-mysql php7.4-opcache php7.4-readline php7.4-xml php7.4-zip php7.4-intl  libapache2-mod-xsendfile libapache2-mod-php7.4 vim-tiny wget php7.4-sqlite3 php-apcu php7.4-gmp php7.4-bcmath libmagickcore-6.q16-6-extra
 RUN apt-get -y upgrade
 RUN apt-get -y autoremove
 RUN apt-get clean
